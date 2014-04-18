@@ -1,0 +1,255 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Sectioned Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\usepackage{hyperref}
+
+\newsectionwidth{0pt} % Stops section indenting
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND ADDRESS(ES) SECTION
+%----------------------------------------------------------------------------------------
+
+\name{{\bf Chen Chen}\\ \\} % Your name at the top
+
+% If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
+
+\address{University of Pennsylvania \\ Room 575, Levine Hall \\ 3330 Walnut Street \\ Philadelphia, PA 19104-6309} % Your address 1
+
+\address{Email: chenche@seas.upenn.edu \\ 
+Web:  \url{http://www.cis.upenn.edu/~chenche/} \\ 
+Phone: (215) 290-9716 \\ 
+Office: (215) 573-2582} % Your address 2
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{\centerline{OBJECTIVE}}
+
+%\vspace{8pt} % Gap between title and text
+
+%A position in Personnel Administration utilizing skills in recruiting, training and compensation.\\
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{EDUCATION}}
+
+\vspace{15pt} % Gap between title and text
+
+\begin{itemize}
+\item {\bf Ph.D. Student},
+Computer and Information Science \hfill Sep 2011 - Present\\
+University of Pennsylvania, Philadelphia, PA  \\
+Advisors: Boon Thau Loo and Limin Jia (CMU) \\
+GPA: 3.93/4.00
+
+\item {\bf Bachelor of Science}, Information Security \hfill Sep 2007 - Sep 2011\\
+School of Computer Science \\
+Fudan University, Shanghai, China  \\
+GPA: 3.56/4.00; Major GPA: 3.90/4.00; Rank: 3/32
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+ \vspace{0.2in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{PUBLICATIONS}}
+
+\vspace{15pt} % Gap between title and text
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item {\bf A Program Logic for Secure Routing Protocols} \\
+Chen Chen, Limin Jia, Hao Xu, Cheng Luo, Wenchao Zhou and Boon Thau Loo\\
+In the 34th IFIP International Conference on Formal Techniques for Distributed
+Objects, Components and Systems (FORTE 2014), June 2014\\
+\item {\bf Proof-based Verification of Software Defined Networks} \\
+Chen Chen, Limin Jia, Wenchao Zhou, and Boon Thau Loo \\
+In the Open Networking Summit (ONS), March 2014\\
+\item {\bf Reduction-based Security Analysis of Internet Routing Protocols} \\
+Chen Chen, Limin Jia, Wenchao Zhou, and Boon Thau Loo \\
+In the 2nd International Workshop on Rigorous Protocol Engineering (WRiPE), Oct 2012 \\
+Co-located with 20th IEEE International Conference on Network Protocols (ICNP)\\
+\item {\bf Datacast: A Scalable and Efficient Reliable Group Data Delivery Service for Data Centers} \\
+Jiaxin Cao, Chuanxiong Guo, Guohan Lu, Yongqiang Xiong, Yixin Zheng, Yongguang
+Zhang, Yibo Zhu, and Chen Chen \\
+In the 8th International Conference on emerging Networking EXperiments and Technologies (CoNEXT), Dec 2012 \\
+\item {\bf Towards a Secure and Verifiable Future Internet} \\
+Limin Jia, Chen Chen, Sangeetha A.Jyothi, Wenchao Zhou, Suyog Mapara and Boon Thau Loo \\
+In the Off the Beaten Track: Underrepresented Problems for Programming Language Researchers(OBT), Jan 2012 \\
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\vspace{0.2in} % Some whitespace between sections
+\vspace{0.8in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{RESEARCH EXPERIENCE}}
+
+\vspace{8pt} % Gap between title and text
+
+\subsubsection{University of Pennsylvania, Research Assistant, Sep 2011 - Present}
+\begin{itemize}
+\item {\bf Towards a Secure and Verifiable Future Internet} \hfill Sep 2011 -- Present\\
+Developing a unified framework for combining implementation and formal
+verification of security properties in routing protocol and routing
+architecture. NDlog -- a networking declarative language is used to specify
+protocols and architectures. The specification document can be both implemented
+in RapidNet and verified by Coq.
+
+(in collaboration with Prof. Boon Thau Loo, Dr. Limin Jia and Prof. Wenchao Zhou (Georgetown University))
+\end{itemize}
+
+\subsubsection{AT\&T Labs Research, Research Assistant, Jun 2013 - Aug 2013}
+\begin{itemize}
+\item {\bf Software Defined Networks} \hfill Jun 2013 - Present\\
+Building infrastructure supporting multi-datacenter Layer-2 Network. SDN controllers
+are used to achieve scalability by replacing broadcast traffic, such as ARP
+requests and DHCP requests/replies, with unicast traffic to the controller. Live
+migration
+can be supported naturally by our system.
+
+(in collaboration with Dr. Changbin Liu (Senior Member of Technical Staff, AT\&T) and Prof. Boon Thau Loo)
+\end{itemize}
+
+\subsubsection{Microsoft Research Asia, Research Assistant, Apr 2010 - Oct 2010}
+\begin{itemize}
+\item {\bf Multicast in Data Center Network} \hfill Apr 2010 - Oct 2010\\
+Developed algorithms for multicast in data center network. Constructed optimal
+multicast trees for different large-scale architectures in seconds, including
+Bcube, FatTree and Torus. Compared algorithms with BitTorrent protocols for
+optimization evaluation.
+
+(in collaboration with Dr. Jiaxin Cao, Dr. Chuanxiong Guo, Dr. Haitao Wu, Dr. Yongqiang Xiong)
+\end{itemize}
+
+\subsubsection{Fudan University, Research Assistant, Sep 2009 - Feb 2010}
+\begin{itemize}
+\item {\bf Network Coding for Highly Reliable P2P Network} \hfill Sep 2009 - Feb 2010\\
+Implemented hierarchical P2P network based on network coding with C$\#$. Reduced
+file sharing time in distributed file transmission with network coding. Compared
+the performance of network coding with traditional file sharing protocol:
+BitTorrent and showed that network coding is quicker and effective in
+distributing scarce information.
+
+(in collaboration with Prof. Xin Wang, Prof. Jin Zhao)
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+%\vspace{0.2in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{\centerline{COMPUTER SKILLS}}
+
+%\vspace{8pt} % Gap between title and text
+
+%Experienced in SPSS, BMDP statistical packages; LOTUS 1-2-3, Personal Editor
+
+%----------------------------------------------------------------------------------------
+
+
+\vspace{0.2in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	TEACH ASSISTANT SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{\centerline{TEACHING EXPERIENCE}}
+
+% \vspace{15pt} % Reduce space between section title and contents
+
+% \begin{itemize}
+% \item CIS 262: Automata, Computability and Complexity \hfill Fall 2012\\
+% Teaching assistant for Prof. Aaron Roth, responsible for recitation
+% \item CIS 511: Theory of Computation \hfill Spring 2013 \\
+% Teaching Assistant for Prof. Jean Gallier
+% \end{itemize}
+%----------------------------------------------------------------------------------------
+
+% \vspace{0.2in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	HONORS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{HONORS}}
+
+\vspace{15pt} % Reduce space between section title and contents
+
+\begin{itemize}
+\item {\bf National Scholarship 1st Prize} \hfill 2009 - 2010\\
+Top 1$\%$ student in Fudan University(i.e. Top 1 student in the major) is awarded for excellent academic performance. One student every two years for the same major
+\item {\bf Tung OOCL Scholarship 1st Prize} \hfill 2008 - 2009 \\
+Top 1$\%$ student in the major is awarded for excellent academic performance
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\vspace{0.2in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	COURSES SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{\centerline{COURSES TAKEN}}
+
+% \vspace{15pt} % Reduce space between section title and contents
+
+% \begin{itemize}
+% \item CIS 673: Computer-Aided Verification \hfill Fall 2012
+% \item CIS 700: Programming and Problem Solving \hfill Summer 2012
+% \item CIS 500: Software Foundation \hfill Spring 2012
+% \item CIS 511: Theory of Computation \hfill Spring 2012
+% \item CIS 501: Introduction to Computer Architecture \hfill Fall 2011
+% \item CIS 502: Analysis of Algorithm \hfill Fall 2011
+% \item CIS 800: Rigorous Internet Protocol Engineering \hfill Fall 2011
+% \end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document} 
