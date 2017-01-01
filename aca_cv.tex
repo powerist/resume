@@ -32,6 +32,7 @@
 
 \long\def\symbolfootnote[#1]#2{\begingroup%
 \def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+\def\headline#1{\hbox to \hsize{\hrulefill\quad\lower.3em\hbox{#1}\quad\hrulefill}}
 
 \begin{document}
 
@@ -39,7 +40,7 @@
 %	YOUR NAME AND ADDRESS(ES) SECTION
 %----------------------------------------------------------------------------------------
 
-\name{{\bf {\huge Chen Chen}}\\ \\} % Your name at the top
+\name{{\bf {\Huge Chen Chen}}\\ \\} % Your name at the top
 
 % If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
 
@@ -68,8 +69,15 @@ Phone: (215) 290-9716}
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{EDUCATION}}
+% \begin{center}
+% \line(1,0){250}
+% \end{center}
 
+%\headline{{\huge Education}}
+\section{\headline{{\Large Education}}}
+%\section{\centerline{EDUCATION}}
+
+\vspace{15pt} % Gap between title and text
 \vspace{15pt} % Gap between title and text
 
 \input{edu}
@@ -81,9 +89,14 @@ Phone: (215) 290-9716}
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
+% \begin{center}
+% \line(1,0){250}
+% \end{center}
 
-\section{\centerline{PUBLICATIONS}}
+\section{\headline{{\Large Publications}}}
+%\section{\centerline{PUBLICATIONS}}
 
+\vspace{15pt} % Gap between title and text
 \vspace{15pt} % Gap between title and text
 
 \input{pub}
@@ -97,9 +110,11 @@ Phone: (215) 290-9716}
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{PROFESSIONAL EXPERIENCE}}
+\section{\headline{{\Large Professional Experience}}}
+%\section{\centerline{PROFESSIONAL EXPERIENCE}}
 
 \vspace{15pt} % Reduce space between section title and contents
+% \vspace{15pt} % Gap between title and text
 
 \input{aca_exp}
 \input{ind_exp}
@@ -129,9 +144,11 @@ Phone: (215) 290-9716}
 %	HONORS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{HONORS}}
+\section{\headline{{\Large Honors}}}
+%\section{\centerline{HONORS}}
 
 \vspace{15pt} % Reduce space between section title and contents
+\vspace{15pt} % Gap between title and text
 
 \begin{itemize}
 \item {\bf National Scholarship 1st Prize} \hfill 2009 - 2010\\
@@ -148,9 +165,11 @@ Top 1$\%$ student in the major is awarded for excellent academic performance
 %	TEACH ASSISTANT SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{TEACHING EXPERIENCE}}
+\section{\headline{{\Large Teaching Experience}}}
+%\section{\centerline{TEACHING EXPERIENCE}}
 
 \vspace{15pt} % Reduce space between section title and contents
+\vspace{15pt} % Gap between title and text
 
 \begin{itemize}[noitemsep]
 \item {\bf Teaching Assistant} for CIS 511: Theory of Computation \hfill Spring 2013 \\
@@ -167,29 +186,13 @@ Top 1$\%$ student in the major is awarded for excellent academic performance
 %	REFERENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{REFERENCES}}
+\section{\headline{{\Large References}}}
+%\section{\centerline{REFERENCES}}
 
 \vspace{15pt} % Reduce space between section title and contents
+\vspace{15pt} % Gap between title and text
 
-\begin{itemize}
-\item {\bf Boon Thau Loo},
-Associate Professor \\
-CIS Masters program chair \\
-Department of Computer and Information Science, 
-University of Pennsylvania
-
-
-\item {\bf Limin Jia},
-Assistant Research Professor \\
-Academic Advisor of MSIS program, INI,
-Affiliated with: CyLab \\
-Electrical and Computer Engineering, Carnegie Mellon University
-
-\item {\bf Wenchao Zhou},
-Assistant Professor \\
-Department of Computer Science, 
-Georgetown University
-
+\input{ref}
 
 \end{itemize}
 
